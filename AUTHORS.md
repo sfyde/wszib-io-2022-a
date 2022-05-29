@@ -1,1 +1,2 @@
-Szymon Fydere sfyde
+Szymon Fyderek sfyde
+Kamil Bobola kbobola
