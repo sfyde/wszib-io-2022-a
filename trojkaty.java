@@ -5,7 +5,7 @@
 class Trojkaty {
     /**
      * Główna funkcja programu.
-     * @param {float} a - Długość pierwszego boku.
+     * @param {float} a - Długość pierwszego boku
      * @param {float} b - Długość drugiego boku.
      * @param {float} c - Długość trzeciego boku.
      */
