@@ -17,6 +17,13 @@ class Trojkaty {
                     System.out.println("Trójkąt równoramienny");
 	 }
     }
+
+    public static boolean czyIstniejeTrojkat(float a, float b, float c){
+                  if (a + b <= c) return false;
+                  if (a + c <= b) return false;
+                  if (b + c <= a) return false;
+                  return true;
+     }
     /** Wyświetla ekran pomocy */
     public static void pomoc(){
         System.out.println("Acme INC. (C) 2022");
@@ -25,7 +32,7 @@ class Trojkaty {
     }
     /** Glowna funkcja */
     public static void main(String... args) {
-	        
+
         float a = Float.valueOf(args[0]);
         float b = Float.valueOf(args[1]);
         float c = Float.valueOf(args[2]);
@@ -33,6 +40,10 @@ class Trojkaty {
                     System.out.println("Długości boków trójkąta muszą być nieujemne!");
                     System.exit(2);
                 }
+	if (!czyIstniejeTrojkat(a, b, c)) {
+                    System.out.println("Z podanych długości boków nie da się zbudować trójkąta");
+                    System.exit(3);
+                   }
 
         jakiTrojkat(a, b, c);
     }
